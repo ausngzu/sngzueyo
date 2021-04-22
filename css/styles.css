@@ -106,7 +106,7 @@ line-height: 1;
   z-index: 2;
 }
 .mv_wrap{padding-top: 100px;width:1920px;height: 100%;margin: 0 auto;}
-#top_menu{width: 100%; font-family: 'Montserrat', sans-serif;background: #fff;height: 100px;position: fixed;z-index:999;}
+#top_menu{width: 100%; font-family: 'Montserrat', sans-serif;background: #fff;height: 100px;position: fixed;z-index:999;box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 10%);}
 .hd_inner{width:1200px;margin: 0 auto;}
 #top_menu .logo{float: left;margin: 36px 0;}
 #top_menu ul{/*padding: 40px 0;*/margin-left:470px;}
@@ -119,6 +119,7 @@ line-height: 1;
     -o-transition: all 0.20s ease-in-out;}
 #top_menu ul li:last-child a{padding-right: 0;}
 #top_menu ul li a:hover{color: #4419e0;}
+#top_menu.sticky{background: rgba(255,255,255,.9);}
 /*#top_menu ul li:after{content: ''; position: absolute;bottom: 0;width: 100px;height: 2px;background: #4419e0;transform: translate(-50%, -50%);left:50%;}*/
 
 .scroll_down {position:absolute;left:50%;bottom:45px;
@@ -157,13 +158,14 @@ line-height: 1;
 
 /*sz2*/
 .sz_portfolio{margin: 0 auto;margin-bottom: 160px;}
-.sz_portfolio ul li{float: left;margin-right: 27px;overflow: hidden}
+.sz_portfolio ul li{float: left;margin-right: 27px;overflow: hidden;height:436px;}
 .sz_portfolio ul li:nth-child(3n){margin-right: 0;}
+.sz_portfolio ul li a{display: block;overflow: hidden;width:100%;height:322px;}
 .sz_portfolio ul li a img{overflow: hidden; -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;}
-.sz_portfolio ul li a p{font-size: 16px;color: #000;text-align: center;padding:30px 0 60px}
+.sz_portfolio ul li p{font-size: 16px;color: #000;text-align: center;padding:30px 0 60px}
 .sz_portfolio ul li:hover a img{transform:scale(1.1);}
 .sz_portfolio .sz_btn{display: block;width: 220px;height: 50px;font-size: 13px;color: #fff;background: #4419e0;border-radius: 50px;text-align: center;line-height: 48px;margin: 0 auto}
 
@@ -177,6 +179,8 @@ line-height: 1;
 .szbox3 .sz_tx1bx .sub_title2:after{content: '/';display: block;font-size: 29px;font-weight: 100;margin:20px 0;}
 
 /*szbox4*/
+.szbox4{height: 821px}
+.szbox4 .sub_title{letter-spacing: 7px}
 .szbox4 .sz_tx1bx{padding: 160px 0 0}
 .szbox4 ul{width: 100%}
 .szbox4 ul li{float: left;width: 33.3333%;text-align: center;}
@@ -184,7 +188,15 @@ line-height: 1;
 .szbox4 ul li p{font-size: 20px;color: #000;font-weight: 100;}
 
 /*footer*/
-footer{height: 300px;}
+footer{height: 170px;background: #383838;}
+footer .ft_logo{float: left;}
+footer .ft_logo a{display:inline-block;padding:70px 0}
+footer .ft_tx{float: left;}
+footer .ft_tx p{font-size: 15px;color: #fff;font-weight: 300;padding: 60px 70px 0;line-height: 30px}
+footer .ft_icon{float: right;}
+footer .ft_icon ul {padding: 60px 0}
+footer .ft_icon ul li{float: left;}
+footer .ft_icon ul li:nth-child(2){padding: 0px 10px}
 @media (max-width: 900px) {
   .wrapper-img {
     width: 90%;
